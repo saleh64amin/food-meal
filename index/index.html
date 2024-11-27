@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <h1>حاسبة احتياجك الغذائي</h1>
+        <form id="calorie-form">
+          <div class="form-group">
+            <label for="weight">الوزن (كجم):</label>
+            <input type="number" id="weight" placeholder="أدخل وزنك" required>
+          </div>
+          <div class="form-group">
+            <label for="height">الطول (سم):</label>
+            <input type="number" id="height" placeholder="أدخل طولك" required>
+          </div>
+          <!-- <div class="form-group">
+            <label for="age">العمر (سنة):</label>
+            <input type="number" id="age" placeholder="أدخل عمرك" required>
+          </div> -->
+          <div class="form-group">
+            <label for="gender">الجنس:</label>
+            <select id="gender" required>
+              <option value="male">ذكر</option>
+              <option value="female">أنثى</option>
+              <option value="brgnet1">حامل في ثلث الاول</option>
+              <option value="brgnet2">حامل في ثلث الثاني</option>
+              <option value="brgnet3">حامل في ثلث الثالث</option>
+              <option value="mama">ام رضيع</option>
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="activity-level">مستوى النشاط:</label>
+            <select id="activity-level" required>
+              <option value="1.2">قليل النشاط</option>
+              <option value="1.375">نشاط خفيف</option>
+              <option value="1.55">نشاط متوسط</option>
+              <option value="1.725">نشاط عالي</option>
+              <option value="1.9">نشاط مكثف</option>
+            </select>
+          </div>
+          <button type="submit" class="calculate-btn">احسب احتياجك</button>
+        </form>
+        <div>
+            <p id="ss"></p>
+        </div>
+        <div id="results">
+          <h2>نتائجك:</h2>
+          
+          <p id="calories-result"></p>
+          <p id="macros-result"></p>
+         
+          <p id="bdel"></p>
+         
+        </div>
+       
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
